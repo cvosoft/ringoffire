@@ -11,3 +11,22 @@
         height: 100vh;
     }
 }
+
+.startlabel {
+    border: 3px solid gold;
+    background-color: goldenrod;
+    position: absolute;
+    /*left: 0;
+    right: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 50vw;
+    font-size: xx-large;
+
+    &:hover {
+        filter: brightness(1.25);
+        cursor: pointer;
+    }
+}
