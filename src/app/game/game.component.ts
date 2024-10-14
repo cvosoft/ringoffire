@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Game } from 'src/models/game';
 
 @Component({
   selector: 'app-game',
@@ -6,17 +7,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent implements OnInit {
+  game!: Game;
+  currentCard: string | undefined;
+  pickCardAnimation = false;
 
   constructor() { }
 
-  pickCardAnimation = false;
+
+
 
   ngOnInit(): void {
-
+    this.newGame();
   }
 
   takeCard() {
-    this.pickCardAnimation = true;
+    if (!this.pickCardAnimation) {
+      this.currentCard = this.game.stack.pop();
+      this.pickCardAnimation = true;
+
+
+      setTimeout(() => {
+        this.pickCardAnimation = false;
+      }, 1500)
+    }
+  }
+
+  newGame() {
+    this.game = new Game;
+    console.log(this.game);
+
   }
 
 
