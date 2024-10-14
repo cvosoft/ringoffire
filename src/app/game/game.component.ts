@@ -10,7 +10,7 @@ import { Game } from 'src/models/game';
 export class GameComponent implements OnInit {
   pickCardAnimation = false;
   currentCard: string = "";
-  
+
   game: Game = {
     players: [],
     stack: [],
@@ -27,9 +27,15 @@ export class GameComponent implements OnInit {
 
   takeCard() {
     if (!this.pickCardAnimation) {
-      if (this.game.stack.length >= 1) { this.currentCard = this.game.stack.pop(); }
-      this.pickCardAnimation = true;
-      this.game.playedCards.push(this.currentCard);
+
+      const card = this.game.stack.pop();
+
+      if (card === undefined) { }
+      else {
+        this.currentCard = card;
+        this.pickCardAnimation = true;
+        this.game.playedCards.push(this.currentCard);
+      }
 
       setTimeout(() => {
         this.pickCardAnimation = false;
@@ -39,7 +45,7 @@ export class GameComponent implements OnInit {
 
   newGame() {
     this.game = new Game;
-    console.log(this.game);
+    //console.log(this.game);
   }
 
 
