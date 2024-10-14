@@ -9,8 +9,8 @@ import { Game } from 'src/models/game';
 
 export class GameComponent implements OnInit {
   pickCardAnimation = false;
-  currentCard: string = "";
-  game: Game;
+  currentCard: string;
+  game!: Game;
 
   constructor() {
   }
@@ -21,7 +21,7 @@ export class GameComponent implements OnInit {
 
   takeCard() {
     if (!this.pickCardAnimation) {
-      if (this.game.stack.length == 4) { this.currentCard = this.game.stack.pop(); }
+      this.currentCard = this.game.stack.pop();
       this.pickCardAnimation = true;
       this.game.playedCards.push(this.currentCard);
 
@@ -34,7 +34,6 @@ export class GameComponent implements OnInit {
   newGame() {
     this.game = new Game;
     console.log(this.game);
-
   }
 
 
