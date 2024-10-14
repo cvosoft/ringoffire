@@ -10,6 +10,7 @@ import { Game } from 'src/models/game';
 export class GameComponent implements OnInit {
   pickCardAnimation = false;
   currentCard: string = "";
+  
   game: Game = {
     players: [],
     stack: [],
