@@ -21,6 +21,8 @@ export class GameInfoComponent implements OnInit, OnChanges {
   //   { title: 'Never have i ever...', description: 'Say something you never did. Everyone who did it has to drink.' },
   //   { title: 'Rule', description: 'Make a rule. Everyone needs to drink when he breaks the rule.' },
   // ];
+
+  //PIK
   cardAction = [
     { title: 'SL-Schadenstypen', description: 'Erkläre den anderen die Schalleitungsschadenstypen und wie diese sich im Tonaudiogramm unterscheiden.' },
     { title: 'Ton-Vertäubung', description: 'Erkläre den anderen wie man die End-Rauschpegel bei der Vertäubung berechnet.' },
@@ -32,9 +34,55 @@ export class GameInfoComponent implements OnInit, OnChanges {
     { title: 'Tympanometrie', description: 'Erkläre den anderen wie ein Tympanometer funktioniert und gehe dabei auf die Begriff IST- und SOLL-Wert ein.' },
     { title: 'Messverfahren', description: 'Erkläre den anderen den Unterschied zwischen objektiven und subjektiven Messverfahren und gebe auch je zwei Beispiele.' },
     { title: 'Korrelationen 2', description: 'Erkläre den anderen wie man die Korrelation für den Einsilberwert bei 65 dBI berechnet.' },
-    { title: 'Joker', description: 'Alle trinken einen Apfelsaft!' },
-    { title: 'Frauen', description: 'Alle Frauen trinken eine Mango-Schorle!' },
-    { title: 'Männer', description: 'Alle Männer trinken ein Glas Milch' },
+    { title: 'Pik-Joker', description: 'Alle trinken einen Apfelsaft!' },
+    { title: 'Pik-Dame', description: 'Alle Frauen trinken eine Mango-Schorle!' },
+    { title: 'Pik-König', description: 'Alle Männer trinken ein Glas Milch' },
+
+    // KREUZ
+    { title: 'SL-Schadenstypen', description: 'Erkläre den anderen die Schalleitungsschadenstypen und wie diese sich im Tonaudiogramm unterscheiden.' },
+    { title: 'Ton-Vertäubung', description: 'Erkläre den anderen wie man die End-Rauschpegel bei der Vertäubung berechnet.' },
+    { title: 'Sprachvertäubung', description: 'Erkläre den anderen wie man bei der Sprachvertäubung vorgeht und die Rauschpegel errechnet.' },
+    { title: 'Tympanogramme', description: 'Erkläre den anderen welche Tympanogramme sich bei unterschiedlichen pathologischen Ursachen ergeben (Tubenverschluss, steife Trommelfellnarbe etc.) ' },
+    { title: 'Nervenphysiologie', description: 'Erkläre den anderen den Unterschied zwischen Rezeptorpotential und Aktionspotential' },
+    { title: 'Carhart-Test', description: 'Erkläre den anderen den Carhart-Test (Was wird wie gemessen? Was bedeuten die Ergebnisse?)' },
+    { title: 'Korrelationen', description: 'Erkläre den anderen wie man die Korrelation für die U-Schwelle berechnet.' },
+    { title: 'Tympanometrie', description: 'Erkläre den anderen wie ein Tympanometer funktioniert und gehe dabei auf die Begriff IST- und SOLL-Wert ein.' },
+    { title: 'Messverfahren', description: 'Erkläre den anderen den Unterschied zwischen objektiven und subjektiven Messverfahren und gebe auch je zwei Beispiele.' },
+    { title: 'Korrelationen 2', description: 'Erkläre den anderen wie man die Korrelation für den Einsilberwert bei 65 dBI berechnet.' },
+    { title: 'Kreuz-Joker', description: 'Alle trinken einen Apfelsaft!' },
+    { title: 'Kreuz-Dame', description: 'Alle Frauen trinken eine Mango-Schorle!' },
+    { title: 'Kreuz-König', description: 'Alle Männer trinken ein Glas Milch' },
+
+    //KARO
+    { title: 'SL-Schadenstypen', description: 'Erkläre den anderen die Schalleitungsschadenstypen und wie diese sich im Tonaudiogramm unterscheiden.' },
+    { title: 'Ton-Vertäubung', description: 'Erkläre den anderen wie man die End-Rauschpegel bei der Vertäubung berechnet.' },
+    { title: 'Sprachvertäubung', description: 'Erkläre den anderen wie man bei der Sprachvertäubung vorgeht und die Rauschpegel errechnet.' },
+    { title: 'Tympanogramme', description: 'Erkläre den anderen welche Tympanogramme sich bei unterschiedlichen pathologischen Ursachen ergeben (Tubenverschluss, steife Trommelfellnarbe etc.) ' },
+    { title: 'Nervenphysiologie', description: 'Erkläre den anderen den Unterschied zwischen Rezeptorpotential und Aktionspotential' },
+    { title: 'Carhart-Test', description: 'Erkläre den anderen den Carhart-Test (Was wird wie gemessen? Was bedeuten die Ergebnisse?)' },
+    { title: 'Korrelationen', description: 'Erkläre den anderen wie man die Korrelation für die U-Schwelle berechnet.' },
+    { title: 'Tympanometrie', description: 'Erkläre den anderen wie ein Tympanometer funktioniert und gehe dabei auf die Begriff IST- und SOLL-Wert ein.' },
+    { title: 'Messverfahren', description: 'Erkläre den anderen den Unterschied zwischen objektiven und subjektiven Messverfahren und gebe auch je zwei Beispiele.' },
+    { title: 'Korrelationen 2', description: 'Erkläre den anderen wie man die Korrelation für den Einsilberwert bei 65 dBI berechnet.' },
+    { title: 'Karo-Joker', description: 'Alle trinken einen Apfelsaft!' },
+    { title: 'Karo-Dame', description: 'Alle Frauen trinken eine Mango-Schorle!' },
+    { title: 'Karo König', description: 'Alle Männer trinken ein Glas Milch' },
+
+
+    //HERZ
+    { title: 'SL-Schadenstypen', description: 'Erkläre den anderen die Schalleitungsschadenstypen und wie diese sich im Tonaudiogramm unterscheiden.' },
+    { title: 'Ton-Vertäubung', description: 'Erkläre den anderen wie man die End-Rauschpegel bei der Vertäubung berechnet.' },
+    { title: 'Sprachvertäubung', description: 'Erkläre den anderen wie man bei der Sprachvertäubung vorgeht und die Rauschpegel errechnet.' },
+    { title: 'Tympanogramme', description: 'Erkläre den anderen welche Tympanogramme sich bei unterschiedlichen pathologischen Ursachen ergeben (Tubenverschluss, steife Trommelfellnarbe etc.) ' },
+    { title: 'Nervenphysiologie', description: 'Erkläre den anderen den Unterschied zwischen Rezeptorpotential und Aktionspotential' },
+    { title: 'Carhart-Test', description: 'Erkläre den anderen den Carhart-Test (Was wird wie gemessen? Was bedeuten die Ergebnisse?)' },
+    { title: 'Korrelationen', description: 'Erkläre den anderen wie man die Korrelation für die U-Schwelle berechnet.' },
+    { title: 'Tympanometrie', description: 'Erkläre den anderen wie ein Tympanometer funktioniert und gehe dabei auf die Begriff IST- und SOLL-Wert ein.' },
+    { title: 'Messverfahren', description: 'Erkläre den anderen den Unterschied zwischen objektiven und subjektiven Messverfahren und gebe auch je zwei Beispiele.' },
+    { title: 'Korrelationen 2', description: 'Erkläre den anderen wie man die Korrelation für den Einsilberwert bei 65 dBI berechnet.' },
+    { title: 'Herz-Joker', description: 'Alle trinken einen Apfelsaft!' },
+    { title: 'Herz-Dame', description: 'Alle Frauen trinken eine Mango-Schorle!' },
+    { title: 'Herz-König', description: 'Alle Männer trinken ein Glas Milch' },
   ];
 
 
@@ -50,9 +98,23 @@ export class GameInfoComponent implements OnInit, OnChanges {
   ngOnChanges(): void {
     if (this.card) {
       //console.log(this.card);
-      let cardNumber = +this.card.split('_')[1];
-      this.title = this.cardAction[cardNumber - 1].title;
-      this.description = this.cardAction[cardNumber - 1].description;
+      let cardChosen = this.card.split('_');
+      let cardNumber = +cardChosen[1];
+      let cardColor = cardChosen[0];
+
+      if (cardColor == "ace") {
+        this.title = this.cardAction[cardNumber - 1].title;
+        this.description = this.cardAction[cardNumber - 1].description;
+      } else if (cardColor == "clubs") {
+        this.title = this.cardAction[cardNumber + (1 * 13) - 1].title;
+        this.description = this.cardAction[cardNumber + (1 * 13) - 1].description;
+      } else if (cardColor == "diamonds") {
+        this.title = this.cardAction[cardNumber + (2 * 13) - 1].title;
+        this.description = this.cardAction[cardNumber + (2 * 13) - 1].description;
+      } else if (cardColor == "hearts") {
+        this.title = this.cardAction[cardNumber + (3 * 13) - 1].title;
+        this.description = this.cardAction[cardNumber + (3 * 13) - 1].description;
+      }
     }
   }
 
